@@ -1,0 +1,13 @@
+{
+  "notice": "Illustrative sample data only; not a real assessment.",
+  "findings": [
+    {
+      "title": "Example missing security header",
+      "severity": "low",
+      "asset": "http://localhost:8000",
+      "description": "A sample response omitted a recommended header.",
+      "evidence": "Illustrative sample only.",
+      "remediation": "Evaluate and configure the header for the application context."
+    }
+  ]
+}

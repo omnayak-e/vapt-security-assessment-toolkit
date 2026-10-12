@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vapt-security-assessment-toolkit"
+version = "1.0.0"
+description = "Scoped low-impact VAPT assessment and reporting toolkit"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3"]
+
+[project.scripts]
+vapt-toolkit = "vapt_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
